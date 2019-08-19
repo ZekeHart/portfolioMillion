@@ -180,6 +180,15 @@ body {
 .aboutMeTitle {
     color: #9800d4;
     font-size: 3rem;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26),
+    2px 2px 0px rgb(27, 26, 26)
+}
+
+.aboutMeText {
+    color: rgb(27, 26, 26);
+    text-shadow:  
+    1px 1px 0px #ff00c8
 }
 
 .box:before,
@@ -252,7 +261,7 @@ body {
     width: 100%;
     color: rgb(245, 237, 237);
     font-size: 3rem;
-    /* text-align: center; */
+    text-align: center;
     padding-top: 5%;
     padding-left: 20%;
     padding-right: 20%;
@@ -273,7 +282,9 @@ body {
     border: solid rgb(245, 237, 237);
     border-radius: 10%;
     width: 90%;
+    text-decoration: none;
 }
+
 
 .projectImg {
     max-width: 100%;
@@ -308,3 +319,7 @@ footer {
     text-shadow:  
     1px 1px 0px rgb(27, 26, 26)
 }
+
+  .projectBox:hover{
+    opacity: 0.7;
+  }
