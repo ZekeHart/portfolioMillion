@@ -1,0 +1,279 @@
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+    background-color: rgb(245, 237, 237);
+}
+
+.mainTitle {
+    color: rgb(245, 237, 237);
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26),
+    2px 2px 0px rgb(27, 26, 26),
+    3px 3px 0px rgb(27, 26, 26),
+    4px 4px 0px rgb(27, 26, 26),
+    5px 5px 0px rgb(27, 26, 26),
+    6px 6px 0px rgb(27, 26, 26),
+    7px 7px 0px rgb(27, 26, 26),
+    8px 8px 0px rgb(27, 26, 26),
+    9px 9px 0px rgb(27, 26, 26),
+    10px 10px 0px rgb(27, 26, 26),
+    11px 11px 0px rgb(27, 26, 26),
+    12px 12px 0px rgb(27, 26, 26);
+}
+
+
+.titleName {
+    color:  #963ce0;
+}
+
+.titleDiv {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff003c, #c648c8);
+    /* background: linear-gradient(rgba(47, 21, 71, 0.2),  rgba(37, 42, 112, .2),  rgba(37, 42, 112, .2)),            no-repeat center/cover url(HalongBay1.jpg); */
+}
+
+
+
+.aboutMeDiv {
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 600px) {
+.aboutMeDiv {
+    display: flex;
+}
+.projectBoxes {
+    display: flex;
+}
+
+.projectBox {
+    width: 30%;
+}
+}
+
+
+
+.social-container {
+  width: 100%;
+  /* margin: 40vh auto; */
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: rgb(245, 237, 237);
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #7b00e0, #ae31d9);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #7b00e0, #ae31d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    .mainTitle {
+        font-size: 3rem;
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-shadow:  
+        1px 1px 0px rgb(27, 26, 26),
+        2px 2px 0px rgb(27, 26, 26),
+        3px 3px 0px rgb(27, 26, 26),
+        4px 4px 0px rgb(27, 26, 26),
+        5px 5px 0px rgb(27, 26, 26),
+        6px 6px 0px rgb(27, 26, 26),
+        7px 7px 0px rgb(27, 26, 26),
+        8px 8px 0px rgb(27, 26, 26),
+        9px 9px 0px rgb(27, 26, 26),
+        10px 10px 0px rgb(27, 26, 26),
+        /* 11px 11px 0px rgb(27, 26, 26), */
+        /* 12px 12px 0px rgb(27, 26, 26); */
+    }
+}
+
+.aboutMeTitle {
+    color: #9800d4;
+    font-size: 3rem;
+}
+
+.box:before,
+.box:after {
+    background-color: rgb(245, 237, 237);
+    border-radius: 10%;
+	background-image: linear-gradient(
+											235deg,
+											#ff00c8,
+											rgb(245, 237, 237),
+											#9800d4
+										);
+	bottom: -2px;
+	content: '';
+	left: -2px;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+}
+
+.box:before {
+	z-index: -1;
+}
+
+.box {
+    border-radius: 10%;
+	align-items: center;
+    background-color: rgb(245, 237, 237);
+	display: flex;
+	height: 80%;
+	justify-content: center;
+	position: relative;
+    min-width: 20%;
+    margin: 5%;
+    margin-top: 15%;
+}
+
+.box:after {
+	-webkit-filter: blur(40px);
+	        filter: blur(40px);
+	z-index: -2;
+}
+
+.boxContent {
+	color: #161515;
+	padding: 20px;
+}
+
+.headshotPhoto {
+    max-width: 300px;
+    border-radius: 15%;
+    /* margin: 10%; */
+    border: solid;
+
+    border-color: #ff00c8; 
+    
+}
+
+.headshotBox {
+    /* background-color: red; */
+    margin: 5%;
+    margin-top: 15%;
+}
+
+.myProjectsDiv {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#c648c8, #ff003c);
+}
+
+.projectsTitle {
+    width: 100%;
+    color: rgb(245, 237, 237);
+    font-size: 3rem;
+    /* text-align: center; */
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26),
+    2px 2px 0px rgb(27, 26, 26),
+    3px 3px 0px rgb(27, 26, 26),
+    4px 4px 0px rgb(27, 26, 26),
+    5px 5px 0px rgb(27, 26, 26),
+    6px 6px 0px rgb(27, 26, 26),
+    7px 7px 0px rgb(27, 26, 26),
+    8px 8px 0px rgb(27, 26, 26),
+    9px 9px 0px rgb(27, 26, 26)
+}
+
+.projectBox {
+    margin: 5%;
+    border: solid rgb(245, 237, 237);
+    border-radius: 10%;
+    width: 90%;
+}
+
+.projectImg {
+    max-width: 100%;
+    padding: 5%;   
+}
+
+.projectTitle {
+    color:rgb(245, 237, 237);
+    font-size: 2rem;
+    padding: 5%;
+    padding-top: 0%;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26),
+    2px 2px 0px rgb(27, 26, 26)
+    
+}
+
+.projectDescription {
+    color: rgb(245, 237, 237);
+    padding: 5%;
+    padding-top: 0;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26)
+}
