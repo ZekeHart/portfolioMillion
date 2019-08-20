@@ -64,7 +64,6 @@ body {
     width: 100%;
     height: 100vh;
     background: var(--pink-gradient);
-    /* background: linear-gradient(rgba(47, 21, 71, 0.2),  rgba(37, 42, 112, .2),  rgba(37, 42, 112, .2)),            no-repeat center/cover url(HalongBay1.jpg); */
 }
 
 
