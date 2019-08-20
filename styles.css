@@ -80,13 +80,15 @@ body {
    margin: auto;
 }
 
+.projectBoxes {
+    display: flex;
+    flex-direction: row;
+}
+
 .aboutMeDiv {
     display: flex;
     justify-content: center;
     flex-flow: nowrap;
-}
-.projectBoxes {
-    display: flex;
 }
 
 .projectBox {
@@ -176,6 +178,9 @@ body {
         10px 10px 0px rgb(27, 26, 26),
         /* 11px 11px 0px rgb(27, 26, 26), */
         /* 12px 12px 0px rgb(27, 26, 26); */
+    }
+    .projectBoxes {
+        flex-direction: column;
     }
 }
 
@@ -279,12 +284,18 @@ body {
     9px 9px 0px rgb(27, 26, 26)
 }
 
+.projectBoxes {
+    display: flex;
+    /* flex-direction: column; */
+}
+
 .projectBox {
     margin: 5%;
     border: solid rgb(245, 237, 237);
     border-radius: 10%;
     width: 90%;
     text-decoration: none;
+    padding: 1%;
 }
 
 
