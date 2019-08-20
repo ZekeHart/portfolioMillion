@@ -236,7 +236,7 @@ body {
 .myProjectsDiv {
     width: 100%;
     min-height: 100vh;
-    background: var(--pink-gradient2);
+    /* background: var(--pink-gradient2); */
 }
 
 .projectsTitle {
