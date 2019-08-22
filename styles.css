@@ -10,6 +10,7 @@
     --webkit-button-gradient: -webkit-linear-gradient(45deg, #7b00e0, #ae31d9);
     --dark-purple: #9800d4;
     --hot-pink: #ff00c8;
+    --box-background: linear-gradient(45deg, rgba(123, 0, 224, .1), rgb(174, 49, 217, .1));
   }
 
 *{
@@ -17,7 +18,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-
+    /* background: linear-gradient(45deg, rgba(171, 197, 252, .3), rgba(48, 209, 125, .3)) */
 }
 
 html {
@@ -31,7 +32,7 @@ html {
 }
 
 body {
-    background: var(--off-white-two);
+    background: var(--off-white);
     display: flex;
     flex-direction: column;
 }
@@ -171,13 +172,14 @@ body {
 
 .aboutMeText {
     color: var(--dark-purple);
-    text-shadow:  
-    1px 1px 0px var(--off-black)
+    font-size: 1.1rem;
+    /* text-shadow:  
+    1px 1px 0px var(--off-black) */
 }
 
 .box:before,
 .box:after {
-    background-color: var(--off-white-two);
+    background-color: var(--off-white);
     border-radius: 10%;
 	background-image: linear-gradient(
 											235deg,
@@ -201,7 +203,7 @@ body {
     color: red;
     border-radius: 10%;
 	align-items: center;
-    background-color: var(--off-white-two);
+    background-color: var(--off-white);
 	display: flex;
 	height: 80%;
 	justify-content: center;
@@ -245,7 +247,7 @@ body {
 
 .projectsTitle {
     width: 100%;
-    color: rgb(245, 237, 237);
+    color: var(--off-white-two);
     font-size: 3rem;
     text-align: center;
     padding-top: 5%;
@@ -271,11 +273,12 @@ body {
 
 .projectBox {
     margin: 5%;
-    border: solid rgb(245, 237, 237);
+    border: solid var(--off-white-two);
     border-radius: 10%;
     width: 90%;
     text-decoration: none;
     padding: 1%;
+    background-image: var(--box-background);
 }
 
 
@@ -285,7 +288,7 @@ body {
 }
 
 .projectTitle {
-    color:rgb(245, 237, 237);
+    color:var(--off-white-two);
     font-size: 2rem;
     padding: 5%;
     padding-top: 0%;
@@ -296,7 +299,7 @@ body {
 }
 
 .projectDescription {
-    color: rgb(245, 237, 237);
+    color: var(--off-white-two);
     padding: 5%;
     padding-top: 0;
     text-shadow:  
@@ -305,12 +308,12 @@ body {
 
 footer {
     min-height: 10vh;
-    background: var(--pink-gradient);
+    background: var(--off-white);
     color: var(--dark-purple);
     text-align: center;
     padding: 2%;
-    text-shadow:  
-    1px 1px 0px rgb(27, 26, 26)
+    /* text-shadow:  
+    1px 1px 0px rgb(27, 26, 26) */
 }
 
 .projectBox:hover{
