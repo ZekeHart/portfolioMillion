@@ -8,6 +8,8 @@
     --purple-gradient: linear-gradient(45deg, #c648c8, #ff003c);
     --button-gradient: linear-gradient(45deg, #7b00e0, #ae31d9);
     --webkit-button-gradient: -webkit-linear-gradient(45deg, #7b00e0, #ae31d9);
+    --dark-purple: #9800d4;
+    --hot-pink: #ff00c8;
   }
 
 *{
@@ -160,7 +162,7 @@ body {
 }
 
 .aboutMeTitle {
-    color: #9800d4;
+    color: var(--dark-purple);
     font-size: 3rem;
     text-shadow:  
     1px 1px 0px rgb(27, 26, 26),
@@ -168,9 +170,9 @@ body {
 }
 
 .aboutMeText {
-    color: var(--off-black);
+    color: var(--dark-purple);
     text-shadow:  
-    1px 1px 0px #9800d4
+    1px 1px 0px var(--off-black)
 }
 
 .box:before,
@@ -179,9 +181,9 @@ body {
     border-radius: 10%;
 	background-image: linear-gradient(
 											235deg,
-											#ff00c8,
+											var(--hot-pink),
 											var(--off-white),
-											#9800d4
+											var(--dark-purple)
 										);
 	bottom: -2px;
 	content: '';
@@ -225,7 +227,7 @@ body {
     /* margin: 10%; */
     border: solid;
 
-    border-color: #ff00c8; 
+    border-color: var(--hot-pink); 
     
 }
 
@@ -304,7 +306,7 @@ body {
 footer {
     min-height: 10vh;
     background: var(--pink-gradient);
-    color: #7b00e0;
+    color: var(--dark-purple);
     text-align: center;
     padding: 2%;
     text-shadow:  
