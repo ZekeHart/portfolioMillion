@@ -10,7 +10,7 @@
     --webkit-button-gradient: -webkit-linear-gradient(45deg, #7b00e0, #ae31d9);
     --dark-purple: #9800d4;
     --hot-pink: #ff00c8;
-    --box-background: linear-gradient(45deg, rgba(123, 0, 224, .1), rgb(174, 49, 217, .1));
+    --box-background: linear-gradient(45deg, rgba(123, 0, 224, .2), rgb(174, 49, 217, .2));
   }
 
 *{
