@@ -393,6 +393,7 @@ footer {
 .skillsList {
     color: var(--dark-purple);
     font-size: 1.1rem;
+    margin: 5%;
 }
 
 .skillsCat {
@@ -430,7 +431,7 @@ footer {
 	height: 80%;
 	justify-content: center;
 	position: relative;
-    min-width: 20%;
+    min-width: 40%;
     margin: 5%;
 }
 
