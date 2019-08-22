@@ -334,7 +334,7 @@ footer {
     position: absolute;
     width: 60px;
     height: 30px;
-    background: linear-gradient(45deg, #ABC5FC, #424B54);
+    background: linear-gradient(45deg, #424B54, #ABC5FC);
     border-radius: 50px;
     overflow: hidden;
 }
