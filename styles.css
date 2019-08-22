@@ -303,7 +303,7 @@ body {
 
 footer {
     min-height: 10vh;
-    background: var(--off-white);
+    background: var(--pink-gradient);
     color: var(--dark-purple);
     text-align: center;
     padding: 2%;
@@ -358,8 +358,91 @@ footer {
 }
 
 
+/* skills and experience */
+.skillsSection {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.skillsDiv {
+    display: flex;
+}
 
+.skillsTitle {
+    width: 100%;
+    color: var(--dark-purple);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26),
+    2px 2px 0px rgb(27, 26, 26)
+}
 
+.skillsSubTitle {
+    color: var(--hot-pink);
+    font-size: 2rem;
+    text-shadow:  
+    1px 1px 0px rgb(27, 26, 26)
+}
+
+.skillsList {
+    color: var(--dark-purple);
+    font-size: 1.1rem;
+}
+
+.skillsCat {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.skillsBox:before,
+.skillsBox:after {
+    background-color: var(--off-white);
+    border-radius: 10%;
+	background-image: linear-gradient(
+											235deg,
+											var(--hot-pink),
+											var(--off-white),
+											var(--dark-purple)
+										);
+	bottom: -2px;
+	content: '';
+	left: -2px;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+}
+
+.skillsBox:before {
+	z-index: -1;
+}
+
+.skillsBox {
+    border-radius: 10%;
+	align-items: center;
+    background-color: var(--off-white);
+	display: flex;
+	height: 80%;
+	justify-content: center;
+	position: relative;
+    min-width: 20%;
+    margin: 5%;
+}
+
+.skillsBox:after {
+	-webkit-filter: blur(40px);
+	        filter: blur(40px);
+	z-index: -2;
+}
+
+.skillsBoxContent {
+	padding: 20px;
+}
 
 
 /* min-width media queries */
