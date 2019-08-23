@@ -76,6 +76,7 @@ body {
   width: 100%;
   /* margin: 40vh auto; */
   text-align: center;
+  margin: auto;
 }
 
 .social-icons {
@@ -162,8 +163,9 @@ body {
 }
 
 .aboutMeTitle {
-    color: var(--dark-purple);
+    color: var(--hot-pink);
     font-size: 3rem;
+    margin-bottom: .5rem;
     text-shadow:  
     1px 1px 0px rgb(27, 26, 26),
     2px 2px 0px rgb(27, 26, 26)
@@ -171,7 +173,7 @@ body {
 
 .aboutMeText {
     color: var(--dark-purple);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     /* text-shadow:  
     1px 1px 0px var(--off-black) */
 }
@@ -210,6 +212,8 @@ body {
     margin: 5%;
 }
 
+
+
 .box:after {
 	-webkit-filter: blur(40px);
 	        filter: blur(40px);
@@ -233,6 +237,9 @@ body {
 .headshotBox {
     /* background-color: red; */
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* projects section */
