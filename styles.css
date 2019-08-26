@@ -244,9 +244,10 @@ body {
 
 /* projects section */
 .myProjectsDiv {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background: var(--purple-gradient);
+    background-size: cover;
 }
 
 .projectsTitle {
@@ -281,6 +282,7 @@ body {
     text-decoration: none;
     padding: 1%;
     background-image: var(--box-background);
+    max-height: 90vh;
 }
 
 
